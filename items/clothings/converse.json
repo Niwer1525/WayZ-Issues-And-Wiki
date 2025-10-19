@@ -1,0 +1,16 @@
+{
+	"clothingType": "SHOES",
+	"inventoryVolume": {
+		"x": 2,
+		"y": 1
+	},
+	"maxArmorDamages": 12,
+	"damageMultiplier": 3.0,
+	"modelExtention": ".obj", "textureExtention": ".png",
+	"modelVariant": "converse",
+	"textureVariant": "converse",
+    "displayNames": {
+        "en": "Black Converse",
+        "fr": "Converse Noir"
+    }
+}

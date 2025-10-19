@@ -1,0 +1,13 @@
+{
+    "inventoryVolume": {
+		"x": 2,
+		"y": 1
+	},
+	"recoilReduction": 0.8,
+	"attachementType": "STOCK",
+    "stockType": "LIGHT",
+    "displayNames": {
+		"en": "Light stock",
+		"fr": "Crosse légère"
+	}
+}

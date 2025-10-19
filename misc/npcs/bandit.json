@@ -1,0 +1,32 @@
+{
+    "category": "BANDIT",
+    "sounds": [
+        {
+            "name": "npc.bandit.male.heard",
+            "path": "entity/npcs/bandit/male/heard",
+            "category": "NEUTRAL",
+            "multiSound": 8
+        }
+    ],
+    "outfits": [
+        {
+            "_comment": "Bandit military outfit",
+            "helmets": [
+                { "name": "minecraft:iron_helmet" }
+            ],
+            "chests": [
+                {
+                    "name": "minecraft:iron_chestplate",
+                    "amount": 1
+                }
+            ],
+            "pants": [
+                {
+                    "name": "minecraft:iron_leggings",
+                    "amount": 1
+                }
+            ],
+            "boots": [ { "name": "minecraft:iron_boots" } ]
+        }
+    ]
+}

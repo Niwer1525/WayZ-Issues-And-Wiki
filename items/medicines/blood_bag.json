@@ -1,0 +1,14 @@
+{
+	"inventoryVolume": {
+		"x": 1,
+		"y": 2
+	},
+	"actionType": "BLOCK",
+	"maxStackSize": 1,
+	"blood": 5,
+	
+	"displayNames": {
+		"en": "Blood bag",
+		"fr": "Poche de sang"
+	}
+}

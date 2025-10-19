@@ -1,0 +1,19 @@
+{
+	"inventoryVolume": {
+		"x": 1,
+		"y": 1
+	},
+	"maxStackSize": 1,
+	"itemUses": 1,
+	"food": 7,
+	"water": 7,
+	"energyDrink": false,
+	"actionAnimationType": "EAT",
+	"soundType": "FOOD",
+	"dayPeremption": 250,
+
+	"displayNames": {
+		"en": "XMRE Ration",
+		"fr": "Ration XMRE"
+	}
+}

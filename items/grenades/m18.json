@@ -1,0 +1,26 @@
+{
+	"inventoryVolume": {
+		"x": 1,
+		"y": 2
+	},
+	"grenadeType": "SMOKE",
+	"damageWorld": false,
+	"fuseTime": 5.2,
+	"throwerStrenght": 1,
+	"maxStackSize": 1,
+	"translation" : [
+		{
+			"x": -0.1, "y": -0.50, "z": 0.2
+	    }
+    ],
+	"rotation" : [
+		{
+			"type": "EQUIPPED_THIRD_PERSON",
+			"x": -90, "y": 0, "z": 0
+	    }
+	],
+	"displayNames": {
+		"en": "M 18 Grenade",
+		"fr": "Grenade M 18"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"maxStackSize": 64,
+	"categories": {
+		"medicines": true
+	},
+	"displayNames": {
+		"en": "Alcohol 70°",
+		"fr": "Alcool 70°"
+	}
+}

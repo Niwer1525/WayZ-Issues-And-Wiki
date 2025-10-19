@@ -1,0 +1,17 @@
+{
+	"clothingType": "VEST",
+	"inventoryVolume": {
+		"x": 3,
+		"y": 2
+	},
+	"storage": {
+		"x": 2,
+		"y": 1
+	},
+	"maxArmorDamages": 12,
+	"damageMultiplier": 3.0,   
+    "displayNames": {
+        "en": "Police kevlar vest",
+        "fr": "Gilet pare-balles en kevlar de policer"
+    }
+}

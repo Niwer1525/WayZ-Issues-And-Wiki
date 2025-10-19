@@ -1,0 +1,17 @@
+{
+	"clothingType": "CHEST",
+	"inventoryVolume": {
+		"x": 4,
+		"y": 2
+	},
+	"storage": {
+		"x": 2,
+		"y": 2
+	},
+	"maxArmorDamages": 12,
+	"damageMultiplier": 3.0,   
+    "displayNames": {
+        "en": "Police suit vest",
+        "fr": "Veste de tenue de policier"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "category": "TRADER",
+    "description": "npc.trader.medic",
+    "canWander": false,
+    "canBeAttacked": false,
+    "isImmuneToExplosion": true,
+    "isImmuneToFire": true,
+    "canBePushed": false,
+    "canCollides": true,
+    "cannotDespawn": true,
+    "canAttack": false,
+    "trades": [
+        {
+            "requiredItemToSell": { "name": "minecraft:apple" },
+            "profit": 10
+        },
+        {
+            "itemToSell": { "name": "minecraft:golden_apple" },
+            "cost": 50
+        }
+    ],
+    "translations": {
+		"en": {
+            "id": "npc.trader.medic",
+            "translated": "Medic Trader"
+        },
+        "fr": {
+            "id": "npc.trader.medic",
+            "translated": "Marchand de médicaments"
+        },
+        "ru": {
+            "id": "npc.trader.medic",
+            "translated": "Медик-торговец"
+        }
+	},
+    "sounds": [
+        {
+            "name": "npc.medic_trader.male.interact",
+            "path": "entity/npcs/friendly/male/interact",
+            "category": "NEUTRAL"
+        }
+    ]
+}
