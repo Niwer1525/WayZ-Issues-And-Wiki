@@ -1,0 +1,13 @@
+{
+	"inventoryVolume": {
+		"x": 1,
+		"y": 2
+	},
+	"actionType": "BLOCK",
+	"maxStackSize": 2,
+	
+	"displayNames": {
+		"en": "'amoxicillin' antibiotic",
+		"fr": "Antibiotique 'Amoxicilline'"
+	}
+}

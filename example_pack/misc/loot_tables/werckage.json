@@ -1,0 +1,13 @@
+{
+    "imports": [
+        "food"
+    ],
+    "loot": [
+        {
+            "item": { "name": "minecraft:rotten_flesh" },
+            "chance": 4,
+            "minQuantity": 1,
+            "maxQuantity": 2
+        }
+    ]
+}

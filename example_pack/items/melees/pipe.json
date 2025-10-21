@@ -1,0 +1,12 @@
+{
+	"inventoryVolume": {
+		"x": 3,
+		"y": 2
+	},
+	"damage": 4,
+	"meleeType": "DEFAULT",
+	"displayNames": {
+        "en": "Pipe",
+        "fr": "Tuyau"
+    }
+}

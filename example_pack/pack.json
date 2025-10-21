@@ -1,0 +1,12 @@
+{
+  "description": "Example Content Pack",
+  "version": "1.0.0",
+  "compatibleVersions": "ALL",
+  "author": [
+    "Niwer_"
+  ],
+  "tags": [
+    "example",
+    "template"
+  ]
+}

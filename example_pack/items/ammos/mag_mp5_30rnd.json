@@ -1,0 +1,11 @@
+{
+	"type": "MAG",
+	"inventoryVolume": {
+		"x": 1,
+		"y": 3
+	},
+	"maxAmmo": 30,
+	"maxStackSize": 3,
+	"cartiges": [ "bullet9x19" ],
+	"magCount": 1
+}

@@ -1,0 +1,35 @@
+{
+    "modelPath": "models/props/metal_blue_door/model",
+
+    "texturesPaths": {
+        "text1": { "path": "models/props/metal_blue_door/base" }
+    },
+    "animationsPaths": {
+        "open": {
+            "path": "models/props/metal_blue_door/open",
+            "transitionTick": 1
+        },
+        "close": {
+            "path": "models/props/metal_blue_door/close",
+            "transitionTick": 1
+        }
+    },
+    "sounds": [
+        {
+            "name": "metal_door",
+            "path": "props/metal_door_open",
+            "category": "BLOCKS"
+        },
+        {
+            "name": "metal_door_close",
+            "path": "props/metal_door_close",
+            "category": "BLOCKS"
+        }
+    ],
+    "categories": { "doors": false },
+    "material": "IRON",
+    "soundType": "METAL",
+    "shouldUseOpacityPass" : false,
+    "durability": 0.0,
+    "maxRenderDistance": 4096
+}

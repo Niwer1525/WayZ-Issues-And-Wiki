@@ -1,0 +1,14 @@
+{
+	"inventoryVolume": {
+		"x": 1,
+		"y": 2
+	},
+	"actionType": "BLOCK",
+	"maxStackSize": 8,
+	"heal": 2,
+	
+	"displayNames": {
+		"en": "Rag",
+		"fr": "Chiffon"
+	}
+}

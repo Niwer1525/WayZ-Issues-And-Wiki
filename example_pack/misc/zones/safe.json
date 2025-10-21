@@ -1,0 +1,12 @@
+{
+    "sourceType": "NEUTRAL",
+    "color": {
+        "x": 0,
+        "y": 255,
+        "z": 255
+    },
+
+    "damages": 0,
+    "ignoreArmorsForDamages": false,
+    "noDamages": true
+}

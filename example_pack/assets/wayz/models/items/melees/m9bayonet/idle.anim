@@ -1,0 +1,114 @@
+{
+	"loop": "LOOP",
+	"timelines": [
+		{
+			"objectName": "left_arm",
+			"pivotPoint": {
+				"x": -6,
+				"y": 22,
+				"z": 0
+			},
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -88.524134445,
+						"y": 2.121981741,
+						"z": 44.217540125
+					},
+					"position": {
+						"x": -1.25,
+						"y": -20.55,
+						"z": 7.5
+					}
+				}
+			]
+		},
+		{
+			"objectName": "left_forearm",
+			"pivotPoint": {
+				"x": -7.63,
+				"y": 17.95,
+				"z": 1.725
+			},
+			"parent": "left_arm",
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 20
+					}
+				}
+			]
+		},
+		{
+			"objectName": "right_arm",
+			"pivotPoint": {
+				"x": 6,
+				"y": 22,
+				"z": 0
+			},
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -84.524995961,
+						"y": -4.931939967,
+						"z": 31.778477235
+					},
+					"position": {
+						"x": -0.35,
+						"y": -19.675,
+						"z": 7.75
+					}
+				}
+			]
+		},
+		{
+			"objectName": "right_forearm",
+			"pivotPoint": {
+				"x": 7.65,
+				"y": 17.95,
+				"z": 1.725
+			},
+			"parent": "right_arm",
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -20,
+						"y": 0,
+						"z": 0
+					}
+				}
+			]
+		},
+		{
+			"objectName": "melee",
+			"pivotPoint": {
+				"x": 6,
+				"y": 13,
+				"z": -1.5
+			},
+			"parent": "right_forearm",
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"position": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			]
+		}
+	],
+	"events": {}
+}

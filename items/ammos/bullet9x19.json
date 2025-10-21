@@ -1,9 +1,0 @@
-{
-	"type": "BULLET",
-	"bulletType": "LONG",
-	"maxStackSize": 45,
-	"damage": 8,
-	"texturesPaths": {
-		"default": { "path": "models/items/firearms/default_shell" }
-	}
-}

@@ -1,0 +1,308 @@
+{
+	"loop": "ONCE",
+	"timelines": [
+		{
+			"objectName": "left_arm",
+			"pivotPoint": {
+				"x": -6,
+				"y": 22,
+				"z": 0
+			},
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -76.26162772,
+						"y": 26.71158468,
+						"z": 63.843128098
+					},
+					"position": {
+						"x": -1.25,
+						"y": -28.6,
+						"z": 2.1
+					}
+				},
+				{
+					"time": "0.75",
+					"rotation": {
+						"x": -77.564571356,
+						"y": -9.8823070344,
+						"z": 55.4044136476
+					},
+					"position": {
+						"x": -1.25,
+						"y": -31.6,
+						"z": 6.1
+					}
+				},
+				{
+					"time": "0.1",
+					"position": {
+						"x": -1.25,
+						"y": -31.6,
+						"z": 6.1
+					}
+				},
+				{
+					"time": "1.5",
+					"position": {
+						"x": -1.25,
+						"y": -28.6,
+						"z": 2.1
+					}
+				},
+				{
+					"time": "0.1833",
+					"position": {
+						"x": -1.25,
+						"y": -31.6,
+						"z": 6.1
+					}
+				}
+			]
+		},
+		{
+			"objectName": "left_forearm",
+			"pivotPoint": {
+				"x": -7.63,
+				"y": 17.95,
+				"z": 1.725
+			},
+			"parent": "left_arm",
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 20
+					}
+				}
+			]
+		},
+		{
+			"objectName": "right_arm",
+			"pivotPoint": {
+				"x": 6,
+				"y": 22,
+				"z": 0
+			},
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -75,
+						"y": 0,
+						"z": 0
+					},
+					"position": {
+						"x": 5.8,
+						"y": -26.1,
+						"z": 11.35
+					}
+				}
+			]
+		},
+		{
+			"objectName": "right_forearm",
+			"pivotPoint": {
+				"x": 7.65,
+				"y": 17.95,
+				"z": 1.725
+			},
+			"parent": "right_arm",
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -20,
+						"y": 0,
+						"z": 0
+					}
+				}
+			]
+		},
+		{
+			"objectName": "gun",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"frames": [
+				{
+					"time": "0.0",
+					"position": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			]
+		},
+		{
+			"objectName": "sight_disabled",
+			"pivotPoint": {
+				"x": 0.5,
+				"y": 6.425,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "sight_enabled",
+			"pivotPoint": {
+				"x": 0.5,
+				"y": 6.425,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "light_stock",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "heavy_stock",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "default_stock",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "bolt",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "rack",
+			"pivotPoint": {
+				"x": 0.5,
+				"y": 6.425,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "magazine",
+			"pivotPoint": {
+				"x": -0.025,
+				"y": 6,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": [
+				{
+					"time": "0.75",
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": -17.5
+					},
+					"position": {
+						"x": 0,
+						"y": -7,
+						"z": -2
+					}
+				},
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"position": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"time": "0.1",
+					"position": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				},
+				{
+					"time": "0.1833",
+					"position": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					}
+				}
+			]
+		},
+		{
+			"objectName": "rail_handguard",
+			"pivotPoint": {
+				"x": -0.025,
+				"y": 6,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "default_handguard",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "scope_rail",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		},
+		{
+			"objectName": "base",
+			"pivotPoint": {
+				"x": -0.025,
+				"y": 6,
+				"z": 0
+			},
+			"parent": "gun",
+			"frames": []
+		}
+	],
+	"events": {}
+}

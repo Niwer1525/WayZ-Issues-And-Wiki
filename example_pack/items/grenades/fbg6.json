@@ -1,0 +1,30 @@
+{
+	"inventoryVolume": {
+		"x": 1,
+		"y": 2
+	},
+	"grenadeType": "STUN",
+	"damageWorld": true,
+	"fuseTime": 5.2,
+	"throwerStrenght": 1,
+	"maxStackSize": 1,
+	"translation" : [
+        {
+            "x": 0,
+            "y": 0.5,
+            "z": 0
+	    }
+    ],
+	"scale" : [
+        {
+			"type": "ENTITY",
+            "x": 0.26,
+            "y": 0.26,
+            "z": 0.26
+	    }
+    ],
+	"displayNames": {
+		"en": "FBG 6 Grenade",
+		"fr": "Grenade FBG 6"
+	}
+}

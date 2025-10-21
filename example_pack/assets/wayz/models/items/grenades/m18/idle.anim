@@ -1,0 +1,130 @@
+{
+	"loop": "LOOP",
+	"timelines": [
+		{
+			"objectName": "right_forearm",
+			"pivotPoint": {
+				"x": 6,
+				"y": 18,
+				"z": 1.724
+			},
+			"parent": "right_arm",
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -20,
+						"y": 0,
+						"z": 0
+					}
+				}
+			]
+		},
+		{
+			"objectName": "right_arm",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -72.101925353,
+						"y": -11.912761784,
+						"z": -3.813972393
+					},
+					"position": {
+						"x": 9,
+						"y": -8,
+						"z": -11.925
+					}
+				}
+			]
+		},
+		{
+			"objectName": "left_arm",
+			"pivotPoint": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -107.359315513,
+						"y": -2.249436189,
+						"z": -57.156562101
+					},
+					"position": {
+						"x": -2.2,
+						"y": -2.275,
+						"z": -14.75
+					}
+				}
+			]
+		},
+		{
+			"objectName": "left_forearm",
+			"pivotPoint": {
+				"x": -6,
+				"y": 18,
+				"z": 1.724
+			},
+			"parent": "left_arm",
+			"frames": [
+				{
+					"time": "0.0",
+					"rotation": {
+						"x": -30,
+						"y": 0,
+						"z": 0
+					}
+				}
+			]
+		},
+		{
+			"objectName": "pin",
+			"pivotPoint": {
+				"x": 5.75,
+				"y": 13.25,
+				"z": -2
+			},
+			"parent": "grenade",
+			"frames": []
+		},
+		{
+			"objectName": "spoon",
+			"pivotPoint": {
+				"x": 5.75,
+				"y": 13.25,
+				"z": -2
+			},
+			"parent": "grenade",
+			"frames": []
+		},
+		{
+			"objectName": "base",
+			"pivotPoint": {
+				"x": 5.75,
+				"y": 13.25,
+				"z": -2
+			},
+			"parent": "grenade",
+			"frames": []
+		},
+		{
+			"objectName": "grenade",
+			"pivotPoint": {
+				"x": -0.25,
+				"y": 13.25,
+				"z": -2
+			},
+			"parent": "right_forearm",
+			"frames": []
+		}
+	],
+	"events": {}
+}

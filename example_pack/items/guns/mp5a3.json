@@ -1,0 +1,37 @@
+{
+	"type": "SMG",
+	"inventoryVolume": {
+		"x": 3,
+		"y": 2
+	},
+	"fireModes": [ "SINGLE", "BURST", "AUTO" ],
+	"vertRecoil": 0.5,
+	"horiRecoil": 1.0,
+	"bulletSpread": 1,
+	"roundsPerMin": 580,
+	"ammos": [
+		"mag_mp5_30rnd"
+	],
+	"soundsVariants": {
+		"fire": 2,
+		"distant": 2,
+		"suppressed": 3
+	},
+	"texturesPaths": {
+		"light_stock": {
+			"path": "models/items/firearms/smg/mp5a3/light_stock",
+            "meshesNames": [ "light_stock", "default_stock" ]
+        },
+		"heavy_stock": {
+			"path": "models/items/firearms/smg/mp5a3/heavy_stock",
+            "meshesNames": [ "heavy_stock" ]
+        }
+	},
+    "defaultSightPosition": {
+        "y": 0.032
+    },
+	"displayNames": {
+		"en": "MP5 A3",
+		"fr": "MP5 A3"
+	}
+}

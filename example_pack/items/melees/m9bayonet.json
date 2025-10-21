@@ -1,0 +1,14 @@
+{
+	"inventoryVolume": {
+		"x": 1,
+		"y": 2
+	},
+	"damage": 7.5,
+	"meleeType": "SHARP",
+	"isThrowable": true,
+	"isTwoHanded": false,
+	"displayNames": {
+        "en": "M9 Bayonet",
+        "fr": "Baïonnette M9"
+    }
+}

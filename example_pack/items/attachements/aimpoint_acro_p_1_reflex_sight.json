@@ -1,0 +1,18 @@
+{
+    "inventoryVolume": {
+		"x": 1,
+		"y": 1
+	},
+    "attachementType": "SCOPE",
+    "scopeType": "SMALL",
+    "texturesPaths": {
+        "scope": {
+            "path": "textures/gui/scopes/reticle_9",
+            "meshesNames": [ "reticle" ]
+        }
+    },
+    "displayNames": {
+		"en": "Aimpoint ACRO-P1",
+		"fr": "Aimpoint ACRO-P1"
+	}
+}
