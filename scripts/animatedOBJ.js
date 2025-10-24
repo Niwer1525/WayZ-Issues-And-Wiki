@@ -384,50 +384,19 @@ const CODEC_OBJ = new Codec('obj', {
 
 			for (let i = 0; i < seats.length; i++) {
 				let element = seats[i].e;
-				let vertices = [];
 				
-				function addSeatVertex(x, y, z) {
-					vertex.set(x - element.origin[0], y - element.origin[1], z - element.origin[2]);
-					vertex.divideScalar(16);
-					vertices.push({ x: vertex.x, y: vertex.y, z: vertex.z });
-				}
-
-				addSeatVertex(element.to[0]   + element.inflate, element.to[1] +	element.inflate, element.to[2]  	+ element.inflate);
-				addSeatVertex(element.to[0]   + element.inflate, element.to[1] +	element.inflate, element.from[2]  	- element.inflate);
-				addSeatVertex(element.to[0]   + element.inflate, element.from[1] -	element.inflate, element.to[2]  	+ element.inflate);
-				addSeatVertex(element.to[0]   + element.inflate, element.from[1] -	element.inflate, element.from[2]  	- element.inflate);
-				addSeatVertex(element.from[0] - element.inflate, element.to[1] +	element.inflate, element.from[2]  	- element.inflate);
-				addSeatVertex(element.from[0] - element.inflate, element.to[1] +	element.inflate, element.to[2]  	+ element.inflate);
-				addSeatVertex(element.from[0] - element.inflate, element.from[1] -	element.inflate, element.from[2]  	- element.inflate);
-				addSeatVertex(element.from[0] - element.inflate, element.from[1] -	element.inflate, element.to[2]  	+ element.inflate);
+				/* Calculate the center of the seat cube */
+				let centerX = (element.from[0] + element.to[0]) / 2 / 16;
+				let centerY = (element.from[1] + element.to[1]) / 2 / 16;
+				let centerZ = (element.from[2] + element.to[2]) / 2 / 16;
 				
-				let minX = vertices[0].x;
-				let minY = vertices[0].y;
-				let minZ = vertices[0].z;
-				for (let vert = 0; vert < vertices.length; vert++) {
-					let v = vertices[vert];
-					if(v.x < minX) minX = v.x;
-					if(v.y < minY) minY = v.y;
-					if(v.z < minZ) minZ = v.z;
-				}
-				let maxX = vertices[0].x;
-				let maxY = vertices[0].y;
-				let maxZ = vertices[0].z;
-				for (let vert = 0; vert < vertices.length; vert++) {
-					let v = vertices[vert];
-					if(v.x > maxX) maxX = v.x;
-					if(v.y > maxY) maxY = v.y;
-					if(v.z > maxZ) maxZ = v.z;
-				}
-				
-				/* Print the seat text */
+				/* Print the seat as simple position */
 				output.push('	{');
-				output.push(`${doubleTab}"_comment": "${element.name}",`);
-				output.push(`${doubleTab}"mesh": "",`);
-				output.push(`${doubleTab}"minX": ${minX}, "minY": ${minY}, "minZ": ${minZ},`);
-				output.push(`${doubleTab}"maxX": ${maxX}, "maxY": ${maxY}, "maxZ": ${maxZ},`);
-				output.push(`${doubleTab}"offset": { "x": ${element.origin[0]/16}, "y": ${element.origin[1]/16}, "z": ${element.origin[2]/16} },`);
-				output.push(`${doubleTab}"rotation": { "x": ${element.rotation[1]}, "y": ${element.rotation[0]}, "z": ${element.rotation[2]} }`);
+				output.push(`${doubleTab}"x": ${centerX},`);
+				output.push(`${doubleTab}"y": ${centerY},`);
+				output.push(`${doubleTab}"z": ${centerZ},`);
+				output.push(`${doubleTab}"mountedHeightOffset": 0.0,`);
+				output.push(`${doubleTab}"excludeSittingForRotaedAxis": []`);
 				output.push('	}' + (i == seats.length-1 ? "": ","));
 			}
 			output.push(']');
@@ -522,7 +491,7 @@ const CODEC_OBJ = new Codec('obj', {
 				vertex_keys = {};
 				meshes.push(mesh);
 			}
-			if (cmd == 'v') vertices.push(toVector(args, 3).map(v => v * 16)); 
+			if (cmd == 'v') vertices.push(toVector(args, 3).map(v => v * 16)); // Force scale to 16 (Default Blockbench scale)
 			if (cmd == 'vt') vertex_textures.push(toVector(args, 2))
 			if (cmd == 'vn') vertex_normals.push(toVector(args, 3))
 			if (cmd == 'f') {
@@ -620,9 +589,9 @@ function compileAnimation(animation) {
 				}
 			});
 
-			object.frames = Array.from(frames.values()); 
-			objectForJson.timelines.push(object); 
-		} else 
+			object.frames = Array.from(frames.values()); // Add the frames to the object
+			objectForJson.timelines.push(object); // Add the object to the timelines
+		} else // Add events
 			keyframes.forEach(kf => {
 				const time = kf.getTimecodeString();
 				if (!objectForJson.events[time]) objectForJson.events[time] = [];
